@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  aura-platform:
+    build: .
+    container_name: aura-platform
+    restart: always
+    ports:
+      - "5000:5000"
+    env_file: .env
+    volumes:
+      - uploads_data:/app/server/uploads
+    # Increase memory limit for ML models
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+
+volumes:
+  uploads_data:

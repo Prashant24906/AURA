@@ -1,0 +1,20 @@
+# Core ML & CV
+numpy==2.3.3
+opencv-python-headless==4.13.0
+scikit-learn==1.6.1
+scipy==1.15.2
+
+# Deep Learning (Heavy)
+torch==2.6.0
+torchvision==0.21.0
+transformers==4.49.0
+tensorflow==2.18.0
+
+# Image & Text Processing
+Pillow==11.1.0
+pyttsx3==2.98
+SpeechRecognition==3.14.1
+
+# Utilities
+requests==2.32.3
+python-dotenv==1.0.1
